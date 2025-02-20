@@ -21,7 +21,7 @@ function FormsPage(){
         e.preventDefault()
 
         try {
-            const saveUserResponse =  await axios.post('http://localhost:5000/api/register', {
+            const saveUserResponse =  await axios.post('https://recipe-2myu.onrender.com/api/register', {
                 name: regitserName,
                 email: regitserEmail,
                 password: regitserpassword
@@ -36,7 +36,7 @@ function FormsPage(){
     const handleLoginFormSubmit = async(e) => {
         e.preventDefault()
         try {
-            const LoginResponse = await axios.post('http://localhost:5000/api/login',{
+            const LoginResponse = await axios.post('https://recipe-2myu.onrender.com/api/login',{
                 email: loginEmail,
                 password: loginPassword
             })

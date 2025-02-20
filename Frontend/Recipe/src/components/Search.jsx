@@ -13,7 +13,7 @@ function Search(){
         console.log(apiURL)
         
         try {
-            const response = await fetch(apiURL)
+            const response = await fetch(`https://recipe-2myu.onrender.com/api/search?meal=${mealname}`)
             if(!response.ok){
                 throw new Error("Failed to fetch results")
             }
