@@ -6,7 +6,7 @@ import cors from 'cors'
 import connectDB from './config/db.js'
 import User from './models/user.js'
 import jwt from 'jsonwebtoken'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 dotenv.config() 
 
 const app = express()
